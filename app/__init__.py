@@ -7,4 +7,4 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://user:password@localhost/grader'
 db = SQLAlchemy(app)
 
-from app.routes import student_routes
+from app.routes import login_routes
