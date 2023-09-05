@@ -3,5 +3,5 @@ from app import db
 
 class Student(db.Model):
     id = db.Column(db.Integer, primary_key=True)  # 学号
-    password = db.Column(db.String(50))
+    hashed_password = db.Column(db.String(128))
 
