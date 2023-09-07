@@ -41,16 +41,6 @@ def login_page():
     return render_template('login.html')
 
 
-@app.route('/student/dashboard')
-def student_dashboard():
-    if 'student_id' in session:
-        student_id = session['student_id']
-        # ... 获取学生相关信息 ...
-        return render_template('student_dashboard.html', student_id=student_id)
-    else:
-        flash('请先登录!', 'warning')
-        return redirect(url_for('student_login'))
-
 # @app.route('/student/register', methods=['POST'])
 # def register_student():
 #     student_id = request.form.get('student_id')
