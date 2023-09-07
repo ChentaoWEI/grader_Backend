@@ -2,12 +2,15 @@
 
 A backend project using flask and mysql.
 
-## 安装
+## Installation
 
-### 1. 安装依赖
-
-使用以下命令安装所有必要的依赖库：
+### 1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
+
+### 2. Install MySQL
+
+Go to: https://dev.mysql.com/downloads/mysql/
+
